@@ -3,13 +3,29 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow: hidden;
+/*    overflow-x: none;*/
     font-family: "Poppins";
+}
+
+body{
+    
+    background-color: #283040;
 }
 
 h1,h2,h3,h4,h5,h6,p{
     
     font-family: "Roboto Mono",sans-serif;
+    color: whitesmoke;
+}
+
+#main-content a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navbar-box{
+    
+    background-color: white;
 }
 
 .nav-inner{
@@ -34,7 +50,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .brand-logo span{
     
-    font-family: "Roboto Mono",sans-serif;
+    font-family: "Roboto Mono",monospace;
     margin-top: 9px;
 /*    border: 1px solid yellow;*/
     font-weight: bold;
@@ -63,6 +79,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0px;
     padding: 0px;
     transition: all ease-in-out 0.3s;
+    overflow: hidden;
     
 }
 
@@ -115,7 +132,7 @@ h1,h2,h3,h4,h5,h6,p{
 .nav-links li a{
     
     text-decoration: none;
-    font-family: "Roboto Mono",sans-serif;
+    font-family: "Roboto Mono",monospace;
     font-size: 24px;
     letter-spacing: 1px;
     color: whitesmoke;   
@@ -135,13 +152,19 @@ main{
     
     background-color: #283040;
     color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
+
 
 .intro{
     
 /*    text-align: left !important;*/
 /*    border: 1px solid red !important;*/
 /*    padding-left: 100px;*/
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .inner{
@@ -168,11 +191,44 @@ main{
 .inner a{
     
     text-decoration: none;
-    font-family: "Roboto Mono",sans-serif;
+    font-family: "Roboto Mono",monospace;
     color: white;
 }
+
+.inner:hover{
+    background-color: #283640;
+}
+
 
 .inner .img-box{
     
     margin-top: 50px;
+}
+
+
+/*ABOUT PAGE*/
+
+.col-md-2{
+    
+/*    border: 1px solid  red;*/
+}
+
+.wrapper{
+    
+    display: block;
+/*    border: 1px solid blue;*/
+    text-align: center;
+/*    height: 90vh;*/
+/*    padding-top: 50px;*/
+    background-color: whitesmoke;
+}
+
+.wrapper h1{
+    
+    font-family: "Oswald",sans-serif;
+    font-size: 165px;
+    font-weight: 900;
+    color: #283040;
+/*    opacity: 0.1;*/
+/*    border: 1px solid red;*/
 }
