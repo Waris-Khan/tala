@@ -168,14 +168,18 @@ h1,h2,h3,h4,h5,h6,p{
 
 main{
     
-    background-color: #283040;
+    background-color: #232531;
     color: whitesmoke;
     height: 100%;
     width: 100%;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
+main .fa{
 
+    color: whitesmoke;
+}
 .intro{
     
 /*    text-align: left !important;*/
@@ -254,27 +258,39 @@ main{
 /*    border: 1px solid red;*/
 }
 
+#education-experience{
+
+    padding-bottom: 50px;
+}
+
 .about-content h1{
     
     margin-top: 80px;
+    font-size: 20px;
 }
 
 .about-content h1::after{
     
     position: absolute;
     left: 15px;
-    top: 110px;
+    top: 96px;
     background-color: #25ca7f;
     height: 8px;
-    width: 12%;
+    width: 7%;
     content: "";
     top: 5;
     z-index: -1;
 }
 
-.about-content h3{
+.about-content > h5{
     
     margin-top: 50px;
+}
+
+.about-content p{
+    
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .title h1{
@@ -287,10 +303,10 @@ main{
     
     position: absolute;
     left: 15px;
-    top: 110px;
+    top: 96px;
     background-color: #25ca7f;
     height: 8px;
-    width: 15%;
+    width: 8%;
     content: "";
     top: 5;
     z-index: -1;
@@ -298,7 +314,7 @@ main{
 
 .progress{
     
-    height: 15px;
+    height: 10px;
     border-radius: 50px;
 /*    border: 1px solid #25ca7f;*/
 }
@@ -326,20 +342,45 @@ main{
 
 .skill-item .progress .css {
     position: absolute;
-    top: 75px;
+    top: 65px;
     right: 30px;
 }
 
 .skill-item .progress .js {
     position: absolute;
-    top: 140px;
+    top: 120px;
     right: 30px;
 }
 
 .skill-item .progress .bootstrap {
     position: absolute;
-    top: 205px;
+    top: 175px;
     right: 30px;
+}
+
+.advertise{
+
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    padding-bottom: 30px;
+}
+
+.advertise a{
+
+    color: #283040;
+    background-color: whitesmoke;
+    font-family: "Roboto Mono";
+    float: right;
+    margin-top: 80px;
+}
+
+.advertise a:hover{
+
+    text-decoration: none;
+    color: #283040;
+    background-color: whitesmoke;
+    font-weight: bold;
 }
 
 /*SERVICE PAGE*/
@@ -349,6 +390,40 @@ main{
     margin-top: 80px;
 }
 
+.service-title h1{
+    
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.service-title h1:after{
+    
+    position: absolute;
+    left: 27px;
+    top: 96px;
+    background-color: #25ca7f;
+    height: 8px;
+    width: 11%;
+    content: "";
+    top: 5;
+    z-index: -1;
+}
+
+.service-card{
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.service-card:hover h5{
+
+    /* transform: scale(1.1); */
+    color: #25ca7f;
+}
+
+.fa, .fab{
+    color: #25ca7f;
+}
 
 /**************** 
     WORK SECTION
@@ -546,4 +621,81 @@ select:-webkit-autofill:focus {
 .contact-details{
 
     padding-left: 50px;
+}
+
+/* ***************
+EDUCATION AND EXPERIENCE SECTION
+******************/
+
+#education-experience{
+
+    padding-top: 50px;
+}
+
+.education h4, .experience h4{
+
+    padding-bottom: 30px;
+}
+
+.education  h5, .experience  h5{
+
+    font-weight: 900;
+}
+
+.education h4:after{
+
+    position: absolute;
+    left: 15px;
+    top: 22px;
+    background-color: #25ca7f;
+    height: 8px;
+    width: 22%;
+    content: "";
+    top: 5;
+    z-index: -1;
+}
+
+.experience h4:after{
+
+    position: absolute;
+    left: 15px;
+    top: 22px;
+    background-color: #25ca7f;
+    height: 8px;
+    width: 25%;
+    content: "";
+    top: 5;
+    z-index: -1;
+}
+
+
+/* FOOTER */
+
+footer{
+
+    /* border: 1px solid red; */
+    /* position: fixed; */
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 60px 5px 60px;
+    background-color: #232531;
+}
+
+footer .copy-right {
+    float: left;
+    padding-top: 2px;
+    font-size: 11px;
+    color: #999;
+}
+
+footer .social-links {
+    float: right;
+}
+
+footer .social-links a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    color: whitesmoke;
+    font-size: 13px;
 }
